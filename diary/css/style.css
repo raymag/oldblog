@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  padding: 10px;
+}
+a:link{
+  color: #a0a0a0
+}
+a:visited{
+  color: #a0a0a0
+}
+a:hover {
+  background: #ee7e00;
+  color: #fff
+}
+a:active {
+  background: #dd7d00
+}
+body {
+  background: #222;
+  font-size: 15px;
+  font-family: verdana, monospace;
+  color: #343434;
+}
+h2 {
+  font-size: 32px;
+  color: #ae0000
+}
+p {
+
+  font-size: 20px;
+}
+p, ul {
+  padding-left: 45px
+}
+li {
+  font-size: 20px;
+  font-family: monospace;
+}
+li a{
+  padding: 1px;
+  margin: 0px;
+}
+#icon {
+  float: right;
+  margin: 0px;
+}
+#title{
+  margin-top: 10px;
+  float: left;
+}
+#navbar{
+  height: 50px;
+  background: #fff;
+  border-bottom: solid 1px #cdcdcd;
+  box-shadow: 1px 1px 5px;
+  padding-bottom: 8px;
+}
+#brand {
+  font-family:  impact, monospace;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#menu {
+  height: 34px;
+  float: right;
+  background: #fff
+}
+#menu, a{
+  padding-top: 25px
+}
+#main{
+  margin: auto;
+  width: 70%;
+}
+#post {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 5px 8px;
+  padding: 10px 10px 15px 15px;
+}
+.postdate {
+  float: left;
+  color: #a9a9a9
+}
+.by {
+  float: right;
+  color: #a9a9a9
+}
+.img-post {
+  height: 120px;
+  margin-left: 38%;
+  border-radius: 8px;
+  box-shadow: 1px 3px 7px;
+}
+.magma {
+  color: #CD0000;
+  font-family: impact, fantasy;
+}
+.icon{
+  width: 60px;
+}
