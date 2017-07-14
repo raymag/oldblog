@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel='shortcut icon' type="image/x-icon" href='images/ico/favicon.ico'/>
+  <title> IF-SURPRISE </title>
+  <script>
+  function surprise(sla) {
+    switch (sla) {
+      case '1':
+      document.getElementById('ii').src = 'images/1.jpg'
+      document.getElementById('ii').style.display = 'block'
+        break;
+        case '2':
+        document.getElementById('ii').src = 'images/2.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '3':
+        document.getElementById('ii').src = 'images/3.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '4':
+        document.getElementById('ii').src = 'images/4.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '5':
+        document.getElementById('ii').src = 'images/5.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '6':
+        document.getElementById('ii').src = 'images/6.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '7':
+        document.getElementById('ii').src = 'images/7.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '8':
+        document.getElementById('ii').src = 'images/8.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '9':
+        document.getElementById('ii').src = 'images/9.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '10':
+        document.getElementById('ii').src = 'images/10.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '11':
+        document.getElementById('ii').src = 'images/11.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '12':
+        document.getElementById('ii').src = 'images/12.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '13':
+        document.getElementById('ii').src = 'images/13.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+        case '14':
+        document.getElementById('ii').src = 'images/2.jpg'
+        document.getElementById('ii').style.display = 'block'
+        break;
+
+      default:
+
+    }
+  }
+  </script>
+</head>
+<body>
+  <center>
+    <div id='images'>
+      <img id='object' src='images/tr.png' onclick="surprise(numb.value)"/>
+    </div>
+	<h1> Pérolas do IF </h1>
+    <p> Digite um número de 1 - 14 e descubra um tesouro IF, clickando na caixa  </p>
+    <input type="number" id='numb'>
+  </div>
+  <div id='i'>
+    <img id='ii' src='images/1.jpg' style='display: none;'/>
+  </div>
+  <body>
+</html>
