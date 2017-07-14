@@ -2,97 +2,42 @@
   padding: 0;
   margin: 0;
 }
-#navigation {
-  height: 45px;
-  background: #fff;
-  border-bottom: #dcdcdc solid 1px;
-  box-shadow: 1px 1px 8px;
-  font-family: fantasy, georgia;
+body{
+  background: #000;
+  color: #fff
 }
-body {
-  background: #f3f3f3;
-  font-size: 16px;
-  font-family: monospace;
-  color: #363636;
-}
-#area {
-  width: 70%;
-  margin: 0 auto;
-}
-#logo {
-  float: left;
-  margin-top: 5px;
-}
-#menu {
-  float: right;
-  margin-top: 16px;
-  font-size: 20px;
-}
-.magma {
-  color: #ee0000
-}
+#navbar  {
+  width: 400px;
 
+}
+#logo img{
+  float: left;
+  width: 40%;
+}
+#logo h1 {
+  position: absolute;
+  color: #fff;
+  float: right;
+  font-size: 60pt;
+  margin-top: 75px;
+  margin-left: 165px;
+}
+.mag {
+  color: #CB0000
+}
 a {
   text-decoration: none;
-  padding: 5px;
-  border-radius: 5px;
+  display: block;
 }
-a:link{
-  color: #363f3f
+a:link {
+  color: #0000CB;
 }
 a:visited {
-  color: #363f3f;
+  color: #0000CB;
 }
-a:hover {
-  background: #CD0000;
-  color: #fff;
+a:hover{
+  box-shadow: 5px 5px 5px green;
 }
-a:active {
-  background: #8B0000;
-  font-size: 22px;
-  color: #cfcfcf
-}
-.icon{
-  width: 40px;
-  height: 40px;
-  margin: 0;
-}
-.tit{
-  float: left;
-}
-#principal-area {
-  width: 60%;
-  margin: auto;
-
-}
-h2 {
-  font-size: 35px;
-  color: #8B0000;
-  font-family: fantasy;
-}
-
-.img-post{
-  height: 160px;
-  width: 160px;
-  border-radius: 10px;
-  box-shadow: 1px 5px 8px;
-  float: left;
-  margin-right: 8px;
-}
-#post {
-  box-shadow: 1px 1px 20px;
-  background: #fff;
-  border-radius: 8px;
-  padding-left: 10px;
-  padding-bottom: 60px;
-}
-#post p{
-  text-indent: 2em;
-  text-align: justify;
-  margin-right: 5px;
-  color: #3f3f3f
-}
-.by {
-  border-left: dashed 10px #8b0000;
-  color: #505050
+a:active{
+  color: #CBCB00
 }
