@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  <link rel='shortcut icon' type="image/x-icon" href="images/favicon.ico"/>
+  <title> -RAYMAG- </title>
+  <script>
+  var i = 0
+function zero(){
+  i = -1
+}
+function proxima(){
+  switch (i) {
+    case 0:
+      document.getElementById('show').src = 'images/1.jpg'
+      break;
+    case 1:
+      document.getElementById('show').src = 'images/2.jpg'
+      break;
+    case 2:
+     document.getElementById('show').src = 'images/3.jpg'
+     break;
+    case 3:
+      document.getElementById('show').src = 'images/4.jpg'
+      break;
+    case 4:
+    document.getElementById('show').src = 'images/5.jpg'
+    break;
+    case 5:
+    document.getElementById('show').src = 'images/6.jpg'
+    break;
+    case 6:
+    document.getElementById('show').src = 'images/7.jpg'
+    break;
+    case 7:
+    document.getElementById('show').src = 'images/8.jpg'
+    break;
+    case 8:
+    document.getElementById('show').src = 'images/9.jpg'
+    break;
+    case 9:
+    document.getElementById('show').src = 'images/10.jpg'
+    break;
+    case 10:
+    document.getElementById('show').src = 'images/11.jpg'
+    break;
+    case 11:
+    document.getElementById('show').src = 'images/12.jpg'
+    break;
+    case 12:
+    document.getElementById('show').src = 'images/13.jpg'
+    break;
+    case 13:
+    document.getElementById('show').src = 'images/14.jpg'
+    break;
+    case 14:
+    document.getElementById('show').src = 'images/1.jpg'
+    break;
+    default:
+      zero();
+      break;
+  }
+function anterior(i){
+  switch (i) {
+    case 1:
+      document.getElementById('show').src = 'images/1.jpg'
+      break;
+
+    default:
+
+  }
+}
+}
+function next(){
+  i = i + 1
+  proxima()
+}
+function last(){
+  i = i - 1
+  anterior(i)
+}
+  </script>
+</head>
+<body>
+  <audio loop autoplay hidden="True" src="track/maintheme.mp3">
+  </audio>
+
+    <a href=''><h2 class="l" onclick="last()">Primeira</h2></a>
+    <a href='#'><h2 class="r" onclick="next()">Próxima</h2></a>
+
+<div id='slideshow'>
+  <img id='show' src='images/1.jpg' style='display:block; '/>
+</div>
+<img src='images/tub.gif' class='tub'>
+<img src='images/doido.gif' class='doido'>
+</body>
+</html>
