@@ -41,3 +41,7 @@ a:hover{
 a:active{
   color: #CBCB00
 }
+.extreme:hover{
+	box-shadow: 5px 5px 5px #CF0100;
+	
+}
