@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> MagGAME </title>
+<link rel='shortcut icon' type='image/x-icon' href='img/favicon.ico'/>
+<link rel='stylesheet' type='text/css' href='css/style.css'/>
+<script type='text/javascript' src='scripts/script.js'>
+</script>
+</head>
+<body>
+<!-- Audios -->
+<audio hidden="True" id='wxw' src="voice/wxw.ogg"></audio>
+<audio hidden="True" id='wxm' src="voice/wxm.ogg"></audio>
+<audio hidden="True" id='mxm' src="voice/mxm.ogg"></audio>
+<audio hidden="True" id='mxw' src="voice/mxw.ogg"></audio>
+<audio hidden="True" id='noho' src="voice/noho.ogg"></audio>
+<audio hidden="True" id='no' src="voice/nono.ogg"></audio>
+<audio hidden="True" id='morra' src="voice/morra.ogg"></audio>
+<audio hidden="True" id='fireball' src="voice/fireball.ogg"></audio>
+<audio hidden="True" src='voice/track.mp3' autoplay loop></audio>
+<!-- BARREIRA INICIAL -->
+  <div id='ALL'>
+    <input type='button' value='FECHAR!' onclick='start();'/>
+    <input type='text' id='class1' placeholder="Player 1 Classe
+     (Guerreiro, Mago)" value='guerreiro'/>
+     <input type='text' id='class2' placeholder="Player 2 Classe
+     (Guerreiro, Mago)" value='guerreiro'/>
+  </div>
+<!-- BARREIRA p1  -->
+<div id='b1'>
+</div>
+<!-- BARREIRA p2  -->
+<div id='b2'>
+</div>
+
+<!-- ZONA DE AÇÂO  -->
+<div id='camp'>
+<!-- Player 1  -->
+  <div id='p1'>
+    <!-- Damage -->
+    <h5>Atack: </h5><h6 id='x'>0</h6>
+    <input type='button' value="Atack" onclick='atack1()'/>
+    <!-- Especial!  -->
+    <input type='button' id='s1' value='Especial' onclick='special1();'/>
+    <!-- HP  -->
+    <h5>HP: </h5><h6 id='hp1'> 10</h6>
+    <img id='img1' src=''/>
+  </div>
+
+<!-- Player 2  -->
+  <div id='p2'>
+    <!-- Damage  -->
+    <h5>Atack:</h5>
+    <h6 id='y'>0</h6>
+    <input type='button' value="Atack" onclick='atack2()'/>
+    <!-- Especial!  -->
+    <input type='button' id='s2' value='Especial' onclick='special2();'/>
+    <!-- HP -->
+    <h5>HP:</h5><h6 id='hp2'>10</h6>
+    <img id='img2' src=''/>
+  </div>
+</div>
+</body>
+</html>

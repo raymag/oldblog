@@ -1,0 +1,59 @@
+* {
+padding: 0;
+margin: 0;
+}
+body {
+	background: #1e1e1e;
+	font-size: 80pt;
+	color: #fff;
+	font-family: fantasy, arial;
+}
+#camp {
+	margin-top: 0%;
+	width: 100%;
+}
+#camp input {
+	width: 50%;
+}
+#p1 {
+		float: left;
+}
+#p2 {
+
+	float: right;
+}
+#p2 h6 {
+	float: right;
+}
+#p1 h6{
+	float: right;
+}
+#ALL {
+	position: absolute;
+	margin-top: 0;
+	background: rgba(0, 0, 95, 0.9);
+	width: 100%;
+	height: 100%;
+}
+#ALL input{
+	margin-left: 40%;
+	width: 20%;
+}
+#b1 {
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	background: rgba(50, 0, 0, 0.3);
+	display: none;
+}
+
+#b2 {
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	right: 0;
+	background: rgba(50, 0, 0, 0.3);
+	display: none;
+
+}
