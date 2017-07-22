@@ -7,18 +7,7 @@ var mp1 = Math.floor(Math.random()*2+1);
 var mp2 = Math.floor(Math.random()*2+1);
 
 function death(){
-  xx = Math.floor(Math.random()*2+1);
-  switch (xx) {
-    case 1:
-      document.getElementById('no').play()
-      break;
-    case 2:
-      document.getElementById('noho').play()
-      break;
-    default:
-     document.getElementById('no').play()
-
-  }
+  document.getElementById('no').play()
 }
 
 function die(classe){
@@ -30,7 +19,7 @@ function die(classe){
      document.getElementById('morra').play();
      break;
     default:
-     document.getElementById('norra').play()
+     document.getElementById('morra').play()
   }
 }
 
@@ -44,6 +33,7 @@ function func2(){
 }
 
 function atack1(){
+  document.getElementById('ho').play();
   hp2 = hp2 - y1;
   document.getElementById('hp2').innerHTML = hp2;
   round();
@@ -55,6 +45,7 @@ function atack1(){
 }
 
 function atack2(){
+  document.getElementById('ro').play();
   hp1 = hp1 - y2;
   document.getElementById('hp1').innerHTML = hp1;
   round();
@@ -128,7 +119,7 @@ function special1(){
       if (mp1>0) {
         die(class1);
         mp1 = mp1 - 1;
-        hp2 = hp2 - 2;
+        hp2 = hp2 - 3;
         document.getElementById('hp2').innerHTML = hp2;
         if (hp2 < 1) {
           death();
@@ -145,7 +136,7 @@ function special1(){
     case 'guerreiro':
     document.getElementById('s1').value = 'LÂMINA SEDENTA!';
     if (mp1>0){
-
+      document.getElementById('morra').play()
       mp1 = mp1 - 1;
       hp2 = hp2 - 1;
       document.getElementById('hp2').innerHTML = hp2;
@@ -176,7 +167,7 @@ function special2(){
       if (mp2>0) {
         die(class2);
         mp2 = mp2 - 1;
-        hp1 = hp1 - 2;
+        hp1 = hp1 - 3;
         document.getElementById('hp1').innerHTML = hp1;
         if (hp1 < 1) {
           death();
@@ -193,7 +184,7 @@ function special2(){
     case 'guerreiro':
     document.getElementById('s2').value = 'LÂMINA SEDENTA!';
     if (mp2>0){
-
+      document.getElementById('morra').play()
       mp2 = mp2 - 1;
       hp1 = hp1 - 1;
       document.getElementById('hp1').innerHTML = hp1;
