@@ -1,5 +1,5 @@
-var y1 = Math.floor(Math.random()*2+1);
-var y2 = Math.floor(Math.random()*2+1);
+var y1 = 2;
+var y2 = 2;
 var hp1 = 10;
 var hp2 = 10;
 var rnd = Math.floor(Math.random()*2+1);
@@ -126,7 +126,7 @@ function special1(){
           alert('Player 2 foi derrotado ');
           window.location.reload();
         }
-        round();
+
       }
       else {
         alert('Baixa MP')
@@ -174,7 +174,7 @@ function special2(){
           alert('Player 1 foi derrotado ')
           window.location.reload()
         }
-        round();
+
       }
       else {
         alert('Baixa MP')

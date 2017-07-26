@@ -6,6 +6,11 @@ function guerreiro1(spell){
         mp1 = mp1 - 1;
         hp2 = hp2 - y1;
         document.getElementById('hp2').innerHTML = hp2;
+        if (hp2<1){
+          death()
+          alert('Player 1 venceu!')
+          window.location.reload()
+        }
       }
       else {
         alert('Baixa MP');
@@ -21,6 +26,11 @@ function guerreiro1(spell){
         hp1 = hp2 - 1;
         document.getElementById('hp1').innerHTML = hp1;
         document.getElementById('hp2'.innerHTML) = hp2;
+        if (hp2<1){
+          death()
+          alert('Player 1 venceu!')
+          window.location.reload()
+        }
         round();
       }
       else {
@@ -45,6 +55,11 @@ function mago1(spell){
         hp2 = hp2 - 5;
         document.getElementById('hp1').innerHTML = hp1;
         document.getElementById('hp2').innerHTML = hp2;
+        if (hp2<1){
+          death()
+          alert('Player 1 venceu!')
+          window.location.reload()
+        }
         round();
       }
       else {
@@ -112,6 +127,11 @@ function guerreiro2(spell){
         mp2 = mp2 - 1;
         hp1 = hp1 - y2;
         document.getElementById('hp1').innerHTML = hp1;
+        if (hp1<1){
+          death()
+          alert('Player 2 venceu!')
+          window.location.reload()
+        }
       }
       else {
         alert('Baixa MP');
@@ -127,6 +147,11 @@ function guerreiro2(spell){
         hp1 = hp2;
         document.getElementById('hp1').innerHTML = hp1;
         document.getElementById('hp2'.innerHTML) = hp2;
+        if (hp1<1){
+          death()
+          alert('Player 2 venceu!')
+          window.location.reload()
+        }
         round();
       }
       else {
@@ -151,6 +176,11 @@ function mago2(spell){
         hp1 = hp1 - 5;
         document.getElementById('hp1').innerHTML = hp1;
         document.getElementById('hp2').innerHTML = hp2;
+        if (hp1<1){
+          death()
+          alert('Player 2 venceu!')
+          window.location.reload()
+        }
         round();
       }
       else {
