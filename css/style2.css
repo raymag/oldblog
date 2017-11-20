@@ -5,7 +5,7 @@
 body {
   font-family: sans-serif;
   font-size: 15pt;
-  background-image: url('https://pt.best-wallpaper.net/wallpaper/1920x1080/1106/Earth-and-the-Moon_1920x1080.jpg');
+  background: url("../images/terra.jpg");
   background-size: cover;
 }
 a {
