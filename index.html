@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang='pt-br'>
-<!-- Novo INDEX --- RAYMAG 2.1 -->
-<head>
-  <link rel='stylesheet' type="text/css" href="css/style2.css"/>
-  <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'/>
-  <meta charset='utf-8'/>
-  <title>RAYMAG</title>
-</head>
-<body>
-<audio hidden='True' loop autoplay src='track/eclipse.mp3'></audio>
-  <nav id='menu'>
-    <h1 id='title'>Ray<span id='mag' class='mag'
-       onclick="document.getElementById('mag').style.color = 'red'">MAG</span></h1>
-    <ul type='none' id='links'>
-      <a href=''><li> Início </li></a>
-      <a href=''><li> Fale conosco</li></a>
-    </ul>
-  </nav>
-  <div id='click' onclick='document.getElementById("cclick").style.display = "block"'>
-    <img src='qmark.png' id='cclick' class='click' usemap="click"/>
-    <map name="click">
-      <area href='index2.html' type="rect" coords="0, 0, 512, 512"/>
-    </map>
-  </div>
-  <p> Clicke no meio da terra...</p>
-</body>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Guila Defense</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Guila Defense.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Guila Defense</div>
+      </div>
+    </div>
+  </body>
 </html>
