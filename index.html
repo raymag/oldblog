@@ -3,28 +3,41 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Guila Defense</title>
+    <title>Guila Defense</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Guila Defense v2.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Guila Defense v3.json", {onProgress: UnityProgress});
     </script>
+    <style>
+      body{
+        background: #222;
+        color: orange;
+      }
+      a{
+        text-decoration: none;
+        color: yellow;
+      }
+      #gameContainer{
+        border: solid 2px #eee;
+        border-radius: 10px;
+      }
+      #downlink{
+        float: left;
+      }
+    </style>
   </head>
   <body>
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
-        <div class="webgl-logo"></div>
+        <div id="downlink">
+          Baixe a versão para android <b><a href="Guila_Defense.apk">aqui</a></b>
+        </div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">Guila Defense</div>
-        <div>
-      
-            <br>
-            <h2>Baixe a versão Android <a href="Guila_Defense.apk" style="font-weight:bold">aqui</a> </h2>
-            <br>
-          </div>
       </div>
     </div>
   </body>
